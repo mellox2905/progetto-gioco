@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>2048 - Minecraft Edition</title>
+</head>
+<body>
+    <div class="container">
+        <h1>2048 - Minecraft Edition</h1>
+        <p style="font-size: 17px;">di Claudiu Iulian Matees, Amir Mellouk e Alessandro Zangrandi</p>
+        <h2>Punteggio: <span id="score">0</span></h2>
+        <div class="game-container">
+            <div id="message" class="game-message">
+                <p id="message-p">
+                    <div id="message-score" class="message-sec"></div>
+                </p>
+            </div>
+            <div id="board"></div>
+        </div>
+        <div id="rules" class="game-rules">
+            <p><b>Come si gioca</b>: Usa le frecce per muovere le teste dei mob di Minecraft! Le teste uguali si trasformano in un'altra quando si toccano. Per vincere devi ottenere il Creeper.</p>
+            <p>Gli abbinamenti di 2048 (Minecraft Edition) sono i seguenti:</p>
+            <ul>
+                <li>Pollo (2) + Pollo = Maiale (4)</li>
+                <li>Maiale + Maiale = Pecora (8)</li>
+                <li>Pecora + Pecora = Mucca (16)</li>
+                <li>Mucca + Mucca = Villager (32)</li>
+                <li>Villager + Villager = Zombie (64)</li>
+                <li>Zombie + Zombie = Scheletro (128)</li>
+                <li>Scheletro + Scheletro = Wither Skeleton (256)</li>
+                <li>Wither Skeleton  + Wither Skeleton = Blaze (512)</li>
+                <li>Blaze + Blaze = Enderman (1024)</li>
+                <li>Enderman + Enderman = Creeper (2048)</li>
+            </ul>
+        </div>    
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

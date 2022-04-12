@@ -1,0 +1,115 @@
+/* Componenti */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #fcaa58;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+}
+
+#board {
+    width: 400px;
+    height: 400px;
+    background-color: #d17110;
+    border: 6px solid #6b3706;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: 90px;
+    height: 90px;
+    border: 5px solid #885b31;
+    font-size: 0px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.game-rules {
+    text-align: left;
+    line-height: 1.5em;
+    font-size: 23px;
+    margin-top: 20px !important;
+}
+
+/* Numeri */
+.x2 {
+    background-image: url("../images/TestaPollo.png");
+}
+
+.x4 {
+    background-image: url("../images/TestaMaiale.png");
+}
+
+.x8 {
+    background-image: url("../images/TestaPecora.png");
+}
+
+.x16 {
+    background-image: url("../images/TestaMucca.png");
+}
+
+.x32 {
+    background-image: url("../images/TestaVillager.png");
+}
+
+.x64 {
+    background-image: url("../images/TestaZombie.png");
+}
+
+.x128 {
+    background-image: url("../images/TestaScheletro.png");
+}
+
+.x256 {
+    background-image: url("../images/WitherScheletro.png");
+}
+
+.x512 {
+    background-image: url("../images/TestaBlaze.png");
+}
+
+.x1024 {
+    background-image: url("../images/TestaEnder.png");
+}
+
+.x2048 {
+    background-image: url("../images/TestaCreeper.png");
+}
+
+/* Endgame */
+.game-container .game-message {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgb(255 170 85 / 97%);
+    z-index: 1;
+}
+
+.game-container .game-message p {
+    margin: 0;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.game-container .game-message .message-secondary-p {
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.game-container .game-message.game-won, .game-container .game-message.game-over {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+}
